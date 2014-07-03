@@ -216,5 +216,88 @@ KLD(T_1||T_2) = \sum_{t \in T_1} P_{T_1}(t) \log \frac{P_{T_1}(t)}{P_{T_2}(t)}
   \end{itemize}
   \end{block}
 \end{frame}
+\begin{frame}
+  \frametitle{KLD: Uso delle sorgenti}
+  \begin{block}{Combinazione}
+  \begin{itemize}
+      \item testo delle ancore - contenuto  
+      \item testo vicino alle ancore - contenuto
+      \item termini nell’URL - contenuto
+      \item testo delle ancore - titolo
+      \item testo intorno alle ancore - titolo
+      \item termini nell’URL - titolo
+      \item titolo - contenuto
+      \item metatag
+  \end{itemize}
+  \end{block}
+\end{frame}
+\begin{frame}
+  \frametitle{Tecniche basate sul grafo}
+  \begin{block}{Tecniche base}
+  \begin{itemize}
+  \item TrustRank
+  \item Anti-trust Rank
+  \item Spam mass
+  \end{itemize}
+  \end{block}
+  \begin{block}<2->{}
+  Entrambe utilizzano una versione personalizzata di PageRank:
+  \begin{equation}
+   \alpha G + (1-\alpha)1v^t
+   \label{eqn:pagerank}
+  \end{equation}
+  \end{block}
+  \end{frame}
+\begin{frame}
+  \frametitle{TrustRank}
+  TrustRank tenta di assegnare un valore di rank maggiore alle pagine non spam rispetto alle pagine spam partendo da un insieme di pagine non spam.
+  \begin{block}<2->{Assunzione}
+  \begin{itemize}
+   \item Per determinare le pagine non spam, viene fatta un’assunzione empirica chiamata isolazione approssimata dell’insieme delle pagine buone, la quale afferma che le pagine non spam raramente punteranno a delle pagine spam.
+   \item Gli sviluppatori di pagine web non spam non hanno interesse nel linkare pagine spam (a meno che tramite l’uso di tecniche come l’honeypot vengano “ingannati”).
+  \end{itemize}
+  \end{block}
+\end{frame}
+\begin{frame}
+  \frametitle{TrustRank}
+  \begin{itemize}
+   \item   TrustRank quindi è una versione personalizzata di PageRank dove il vettore di preferenza \(v\) non rappresenta una distribuzione uniforme su tutte le pagine del grafo \(G\) ma una distribzione personalizzata dalle pagine del seedset di partenza.
+$$
+   \alpha G + (1-\alpha)1v^t
+$$
+\item I campi del vettore \(v\) avranno valore 1 se corrisponderanno al nodo del seedset altrimenti 0.
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Anti-trust Rank}
+  \begin{itemize}
+   \item Partendo dalla stessa intuizione dell'isolamento approsimato 
+   \item Anti-trust Rank utilizza un seed set iniziale composto da pagine spam
+   \item Quindi una pagina spam (conosciuta) è linkata da un'altra pagina spam in quanto una pagina non spam non ne avrebbe il motivo 
+   \item Come per TrustRank, Anti-trust Rank viene calolato usando Pagerank personalizzato sul grafo trasposto (visto che adesso si prendono in consierazioni i link in entrata)
+   \item Anti-trust Rank assegna un rank maggiore alle pagine spam
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Spam mass}
+  \begin{itemize}
+   \item Per riconoscere una spam farm si parte dal presupposto che i nodi della spam farm hanno dei link uscenti verso delle pagine target \(t\) per aumentarne il rank
+   \item Spam mass è una misura che valuta l'impatto dello spam sul rank di una pagina
+   \item Vengono assegnati due valori: PageRank e Spam mass
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Determinazione della spam farm}
+  Partendo da un insieme \(\tilde{(V)}^+\) composto da pagine non spam conosiute
+   \begin{block}<2->{Si calcolano due misure}
+   \begin{itemize}
+    \item Spam mass assoluta: \(\tilde{M}_x=p_x-p'_x\)
+     \item Spam mass relativa:  \(\tilde{m}_x=(p_x-p'_x)/p_x=1-p'_x/px\)
+   \end{itemize}
+   dove \(p\) è il \textit{pagerank} dei nodi basato su una distribuzione uniforme mentre \(p'\) è \textit{pagerank} basato sull'insieme \(\tilde{(V)}^+\).
+   \end{block}
+   Viene usato un valore di soglia per determinare se una pagina è parte di una spam farm.
+
+\end{frame}
 
 \end{document}

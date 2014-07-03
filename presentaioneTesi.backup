@@ -1,0 +1,109 @@
+\documentclass{beamer}
+
+\usepackage[italian]{babel} 
+\usepackage[utf8x]{inputenc}
+\usepackage{graphics}
+\usepackage{default}
+\usetheme[language=italian,
+titlepagelogo=logoUnimi,
+bullet=triangle,
+pageofpages=of,
+titleline=true,
+color=blue,
+bullet=cirlce,
+assistantsupervisor=true
+]{TorinoTh}
+
+\title[Tesi di Laurea]{TECNICHE ONLINE PER L’INDIVIDUAZIONE DI SPAM IN UN WEB CRAWLER}
+\institute{Università degli Studi di Milano}
+\author{Antonio Luca}
+\rel{Paolo Boldi}
+\assistantsupervisor{Sebastiano Vigna}
+
+\begin{document}
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\section{Introduzione}
+\begin{frame}
+  \frametitle{Obbiettivo della tesi}  
+  Obbiettivo di questa tesi è stata l’analisi delle varie tecniche di spam detection descritte in letteratura al fine di valutarne il comportamento e vagliare la possibilità di utilizzo di tali tecniche online.
+
+  \begin{block}<2->{Struttura della tesi}
+  \begin{itemize}
+  \item Classificazione delle varie tecniche di spam detection sulla base dei segnali utilizzati.
+  \item Analisi degli algoritmi offline durante la fase di crawling.
+  \end{itemize}
+  \end{block}
+\end{frame}
+\begin{frame}
+  \frametitle{Motivazioni}  
+  \begin{itemize}
+\item I risultati di tale lavoro sarranno utilizzati per essere integrato all’interno di un web crawler distribuito ad alte prestazioni per il futuro sviluppo di un modulo di spam detection.
+\item L’esigenza di tale modulo è sorta a seguito dello sviluppo, presso il Dipartimento di Informatica, di un crawler chiamato BUbiNG, altamente configurabile ma
+privo al momento di qualunque forma di rilevazione di siti e contenuti malevoli.
+  \end{itemize}
+\end{frame}
+\begin{frame}
+    \frametitle{Il fenomeno del web}
+    \begin{block}<1->{Le cause}
+    \begin{itemize}
+    \item<1->Col crescere delle dimensioni del web, aumenta la difficoltà di una pagina di comparire tra i primi risultati di un motore di ricerca per una data quey.
+    \end{itemize}
+    \end{block}
+    \begin{block}<2->{Conseguenze}
+    \begin{itemize}
+        \item<1->Sviluppo di meccanismi di spam per tentare di ingannare gli algoritmi dei motori di ricerca al fine di ottenere un rank maggiore per una data pagina web. 
+    \end{itemize}
+    \end{block}
+\end{frame}
+\begin{frame}
+    \frametitle{Conseguenze del web spam}
+    Le conseguenze del web spam possono essere:
+    \begin{block}<2->{Le cause}
+    \begin{disadv}
+    \item<3->Qualità delle ricerche compromessa penalizzando i siti web legittimi;
+    \item<4->Peridita della fiducia dell'utente nell'utilizzo di un motore di ricerca;
+    \item<5->Inoltre i siti spam possono essere usati come mezzo per malware, pubblicazione di contenuto per adulti e attacchi di tipo “fishing”.
+    \end{disadv}
+    \end{block}
+\end{frame}
+\begin{frame}
+    \frametitle{Spam Detection Offline}
+    La maggior parte delle tecniche di spam detection operano in modalità offline.
+  \begin{center}
+   \includegraphics[width=10cm]{immagini/fasiSpam1}
+  \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{Spam Detection Online}
+    Il rilevamento dello spam viene eseguito durante la fasi di crawling.
+  \begin{center}
+   \includegraphics[width=10cm]{immagini/fasiSpam2}
+  \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{Tecniche di spam detection}
+    \begin{block}<2->{Classificazione}
+    \begin{itemize}
+    \item<3->Tecniche basate sul contenuto;	
+    \item<4->Tecniche basate sul grafo del web;
+    \item<5->Tecniche innovative che usano segnali differenti dalle prime due.
+    \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{Tecniche basate sul contenuto}
+\begin{frame}
+    \frametitle{Feature}
+    Un metodo per identificare lo spam basandosi sul contenuto di una pagina web è  quello di analizzare alcune feature delle pagine spam e confrontarle con le medesime feature di quelle non spam al fine di ottenere dei valori con cui stimare la natura della pagina web.
+    \begin{block}<2->{Esempi di feature}
+    \begin{itemize}
+    \item<3->Proprietà degli URL;	
+    \item<4->Host name resolution;
+    \item<5->Proprietà del contenuto.
+    \end{itemize}
+    \end{block}
+\end{frame}
+\end{document}

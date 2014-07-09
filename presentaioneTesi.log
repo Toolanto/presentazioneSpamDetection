@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  5 JUL 2014 11:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  7 JUL 2014 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,7 +931,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <12> not available
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<logoUnimi.jpg, id=25, 225.84375pt x 224.84pt>
+<logoUnimi.jpg, id=17, 225.84375pt x 224.84pt>
 File: logoUnimi.jpg Graphic file (type jpg)
  <use logoUnimi.jpg>
 Package pdftex.def Info: logoUnimi.jpg used on input line 26.
@@ -1025,17 +1025,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [6
 
-] <immagini/spam.png, id=87, 578.16pt x 216.81pt>
-File: immagini/spam.png Graphic file (type png)
- <use immagini/spam.png>
-Package pdftex.def Info: immagini/spam.png used on input line 66.
-(pdftex.def)             Requested size: 341.43306pt x 128.03587pt.
-
-Overfull \hbox (24.58487pt too wide) in paragraph at lines 66--66
- [] 
- []
-
-
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1047,7 +1037,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [7
 
- <./immagini/spam.png>]
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1132,6 +1122,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [14
 
 ]
+Overfull \vbox (2.88875pt too high) detected at line 161
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1144,6 +1138,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [15
 
 ]
+Overfull \vbox (2.88875pt too high) detected at line 161
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1180,6 +1178,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [18
 
 ]
+Overfull \vbox (23.88043pt too high) detected at line 215
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1192,6 +1194,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [19
 
 ]
+Overfull \vbox (23.88043pt too high) detected at line 215
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1203,18 +1209,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [20
 
-] <immagini/contenuto/fetterly3.png, id=205, 670.505pt x 453.695pt>
-File: immagini/contenuto/fetterly3.png Graphic file (type png)
-
-<use immagini/contenuto/fetterly3.png>
-Package pdftex.def Info: immagini/contenuto/fetterly3.png used on input line 13
-3.
-(pdftex.def)             Requested size: 227.62204pt x 154.01888pt.
-
-Overfull \vbox (0.17345pt too high) detected at line 133
- []
-
-
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1226,15 +1221,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [21
 
- <./immagini/contenuto/fetterly3.png (PNG copy)>]
-<immagini/contenuto/fetterly4.png, id=214, 669.50125pt x 445.665pt>
-File: immagini/contenuto/fetterly4.png Graphic file (type png)
-
-<use immagini/contenuto/fetterly4.png>
-Package pdftex.def Info: immagini/contenuto/fetterly4.png used on input line 13
-9.
-(pdftex.def)             Requested size: 227.62204pt x 151.51729pt.
-
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1246,7 +1233,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [22
 
- <./immagini/contenuto/fetterly4.png (PNG copy)>]
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1270,7 +1257,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [24
 
-]
+] <immagini/test1/coplotTrustAnti_62.jpg, id=231, 481.8pt x 481.8pt>
+File: immagini/test1/coplotTrustAnti_62.jpg Graphic file (type jpg)
+
+<use immagini/test1/coplotTrustAnti_62.jpg>
+Package pdftex.def Info: immagini/test1/coplotTrustAnti_62.jpg used on input li
+ne 246.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 246
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1282,7 +1280,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [25
 
-]
+ <./immagini/test1/coplotTrustAnti_62.jpg>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1307,6 +1305,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [27
 
 ]
+<immagini/test2/trustrankBadNodesTestMode1_62.jpg, id=257, 481.8pt x 481.8pt>
+File: immagini/test2/trustrankBadNodesTestMode1_62.jpg Graphic file (type jpg)
+
+<use immagini/test2/trustrankBadNodesTestMode1_62.jpg>
+Package pdftex.def Info: immagini/test2/trustrankBadNodesTestMode1_62.jpg used 
+on input line 266.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 266
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1318,7 +1328,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [28
 
-]
+ <./immagini/test2/trustrankBadNodesTestMode1_62.jpg>]
+<immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg, id=267, 481.8pt x 481.8
+pt>
+File: immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg Graphic file (type 
+jpg)
+ <use immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg>
+Package pdftex.def Info: immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg 
+used on input line 272.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 272
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1330,8 +1353,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [29
 
-]
-Overfull \vbox (2.88875pt too high) detected at line 209
+ <./immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg>]
+<immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg, id=276, 481.8pt x 481.8pt
+>
+File: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg Graphic file (type jp
+g)
+ <use immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>
+Package pdftex.def Info: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg us
+ed on input line 288.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (35.20027pt too high) detected at line 288
  []
 
 
@@ -1346,8 +1378,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [30
 
-]
-Overfull \vbox (2.88875pt too high) detected at line 209
+ <./immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>]
+File: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg Graphic file (type jp
+g)
+
+<use immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>
+Package pdftex.def Info: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg us
+ed on input line 288.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (35.20027pt too high) detected at line 288
  []
 
 
@@ -1363,6 +1403,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [31
 
 ]
+<immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg, id=294, 481.8pt
+ x 481.8pt>
+File: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg Graphic fil
+e (type jpg)
+
+<use immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg>
+Package pdftex.def Info: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0
+005.jpg used on input line 302.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (28.60027pt too high) detected at line 302
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1374,7 +1428,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [32
 
-]
+ <./immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1386,7 +1440,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [33
 
-]
+] <immagini/test5/averageTest_trust_62.jpg, id=311, 481.8pt x 481.8pt>
+File: immagini/test5/averageTest_trust_62.jpg Graphic file (type jpg)
+
+<use immagini/test5/averageTest_trust_62.jpg>
+Package pdftex.def Info: immagini/test5/averageTest_trust_62.jpg used on input 
+line 327.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 327
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1398,7 +1463,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [34
 
-]
+ <./immagini/test5/averageTest_trust_62.jpg>]
+<immagini/test5/averageTest_antitrust_62.jpg, id=320, 481.8pt x 481.8pt>
+File: immagini/test5/averageTest_antitrust_62.jpg Graphic file (type jpg)
+
+<use immagini/test5/averageTest_antitrust_62.jpg>
+Package pdftex.def Info: immagini/test5/averageTest_antitrust_62.jpg used on in
+put line 342.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 342
+ []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1410,7 +1487,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [35
 
-]
+ <./immagini/test5/averageTest_antitrust_62.jpg>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -1423,7 +1500,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [36
 
 ]
-Overfull \vbox (23.88043pt too high) detected at line 264
+<immagini/test6/averageCompleteTest_trust_62.jpg, id=337, 481.8pt x 481.8pt>
+File: immagini/test6/averageCompleteTest_trust_62.jpg Graphic file (type jpg)
+
+<use immagini/test6/averageCompleteTest_trust_62.jpg>
+Package pdftex.def Info: immagini/test6/averageCompleteTest_trust_62.jpg used o
+n input line 362.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 362
  []
 
 
@@ -1438,8 +1523,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [37
 
-]
-Overfull \vbox (23.88043pt too high) detected at line 264
+ <./immagini/test6/averageCompleteTest_trust_62.jpg>]
+<immagini/test6/averageCompleteTest_antitrust_62.jpg, id=347, 481.8pt x 481.8pt
+>
+File: immagini/test6/averageCompleteTest_antitrust_62.jpg Graphic file (type jp
+g)
+ <use immagini/test6/averageCompleteTest_antitrust_62.jpg>
+Package pdftex.def Info: immagini/test6/averageCompleteTest_antitrust_62.jpg us
+ed on input line 376.
+(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
+
+Overfull \vbox (16.8711pt too high) detected at line 376
  []
 
 
@@ -1454,14 +1548,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [38
 
-] <immagini/altre/webb.png, id=362, 811.03pt x 587.19376pt>
-File: immagini/altre/webb.png Graphic file (type png)
-
-<use immagini/altre/webb.png>
-Package pdftex.def Info: immagini/altre/webb.png used on input line 271.
-(pdftex.def)             Requested size: 170.71652pt x 123.60104pt.
-
-Overfull \vbox (8.6848pt too high) detected at line 271
+ <./immagini/test6/averageCompleteTest_antitrust_62.jpg>]
+Overfull \vbox (18.71375pt too high) detected at line 394
  []
 
 
@@ -1476,580 +1564,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [39
 
- <./immagini/altre/webb.png (PNG copy)>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[40
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[41
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[42
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[43
-
-] <immagini/test1/coplotTrustAnti_62.jpg, id=405, 481.8pt x 481.8pt>
-File: immagini/test1/coplotTrustAnti_62.jpg Graphic file (type jpg)
-
-<use immagini/test1/coplotTrustAnti_62.jpg>
-Package pdftex.def Info: immagini/test1/coplotTrustAnti_62.jpg used on input li
-ne 295.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 295
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[44
-
- <./immagini/test1/coplotTrustAnti_62.jpg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[45
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[46
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[47
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[48
-
-]
-<immagini/test2/trustrankBadNodesTestMode1_62.jpg, id=446, 481.8pt x 481.8pt>
-File: immagini/test2/trustrankBadNodesTestMode1_62.jpg Graphic file (type jpg)
-
-<use immagini/test2/trustrankBadNodesTestMode1_62.jpg>
-Package pdftex.def Info: immagini/test2/trustrankBadNodesTestMode1_62.jpg used 
-on input line 315.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 315
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[49
-
- <./immagini/test2/trustrankBadNodesTestMode1_62.jpg>]
-<immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg, id=456, 481.8pt x 481.8
-pt>
-File: immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg Graphic file (type 
-jpg)
- <use immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg>
-Package pdftex.def Info: immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg 
-used on input line 321.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 321
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[50
-
- <./immagini/test2/antiTrustraktGoodNodesTestMode1_62.jpg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[51
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[52
-
-]
-<immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg, id=481, 481.8pt x 481.8pt
->
-File: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg Graphic file (type jp
-g)
- <use immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>
-Package pdftex.def Info: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg us
-ed on input line 337.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (35.20027pt too high) detected at line 337
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[53
-
- <./immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>]
-File: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg Graphic file (type jp
-g)
-
-<use immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg>
-Package pdftex.def Info: immagini/test3/coplotTrustAnti_Mode1_set3776_62.jpg us
-ed on input line 337.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (35.20027pt too high) detected at line 337
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[54
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[55
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[56
-
-]
-<immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg, id=516, 481.8pt
- x 481.8pt>
-File: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg Graphic fil
-e (type jpg)
-
-<use immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg>
-Package pdftex.def Info: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0
-005.jpg used on input line 353.
-(pdftex.def)             Requested size: 142.26208pt x 142.26378pt.
-
-Overfull \vbox (20.34753pt too high) detected at line 353
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[57
-
- <./immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg>]
-File: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg Graphic fil
-e (type jpg)
-
-<use immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005.jpg>
-Package pdftex.def Info: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0
-005.jpg used on input line 353.
-(pdftex.def)             Requested size: 142.26208pt x 142.26378pt.
-
-Overfull \vbox (20.34753pt too high) detected at line 353
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[58
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[59
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[60
-
-] <immagini/test5/averageTest_trust_62.jpg, id=549, 481.8pt x 481.8pt>
-File: immagini/test5/averageTest_trust_62.jpg Graphic file (type jpg)
-
-<use immagini/test5/averageTest_trust_62.jpg>
-Package pdftex.def Info: immagini/test5/averageTest_trust_62.jpg used on input 
-line 378.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 378
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[61
-
- <./immagini/test5/averageTest_trust_62.jpg>]
-Overfull \vbox (17.08382pt too high) detected at line 387
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[62
-
-]
-Overfull \vbox (17.08382pt too high) detected at line 387
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[63
-
-]
-Overfull \vbox (17.08382pt too high) detected at line 387
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[64
-
-]
-Overfull \vbox (17.08382pt too high) detected at line 387
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[65
-
-] <immagini/test5/averageTest_antitrust_62.jpg, id=591, 481.8pt x 481.8pt>
-File: immagini/test5/averageTest_antitrust_62.jpg Graphic file (type jpg)
-
-<use immagini/test5/averageTest_antitrust_62.jpg>
-Package pdftex.def Info: immagini/test5/averageTest_antitrust_62.jpg used on in
-put line 393.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 393
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[66
-
- <./immagini/test5/averageTest_antitrust_62.jpg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[67
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[68
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[69
-
-]
-<immagini/test6/averageCompleteTest_trust_62.jpg, id=625, 481.8pt x 481.8pt>
-File: immagini/test6/averageCompleteTest_trust_62.jpg Graphic file (type jpg)
-
-<use immagini/test6/averageCompleteTest_trust_62.jpg>
-Package pdftex.def Info: immagini/test6/averageCompleteTest_trust_62.jpg used o
-n input line 413.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 413
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[70
-
- <./immagini/test6/averageCompleteTest_trust_62.jpg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[71
-
-]
-<immagini/test6/averageCompleteTest_antitrust_62.jpg, id=643, 481.8pt x 481.8pt
->
-File: immagini/test6/averageCompleteTest_antitrust_62.jpg Graphic file (type jp
-g)
- <use immagini/test6/averageCompleteTest_antitrust_62.jpg>
-Package pdftex.def Info: immagini/test6/averageCompleteTest_antitrust_62.jpg us
-ed on input line 427.
-(pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
-
-Overfull \vbox (16.8711pt too high) detected at line 427
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[72
-
- <./immagini/test6/averageCompleteTest_antitrust_62.jpg>]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[73
-
-]
-Overfull \vbox (18.71375pt too high) detected at line 445
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[74
-
 ]
 \tf@nav=\write6
 \openout6 = `presentaioneTesi.nav'.
@@ -2060,44 +1574,41 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentaioneTesi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  (./presentaioneTesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 Package rerunfilecheck Info: File `presentaioneTesi.out' has not changed.
-(rerunfilecheck)             Checksum: 090F0B8DBBBA6378AFC675893A3ACDC5;111.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
- 17766 strings out of 495048
- 324494 string characters out of 3181555
- 411603 words of memory out of 3000000
- 20343 multiletter control sequences out of 15000+200000
+ 17614 strings out of 495048
+ 322769 string characters out of 3181555
+ 409991 words of memory out of 3000000
+ 20271 multiletter control sequences out of 15000+200000
  13151 words of font info for 48 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,18n,53p,405b,745s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb>
-Output written on presentaioneTesi.pdf (74 pages, 539274 bytes).
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msam10.pfb>
+Output written on presentaioneTesi.pdf (39 pages, 322129 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 625 compressed objects within 7 object streams
- 153 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

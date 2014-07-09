@@ -1,4 +1,2 @@
 \beamer@endinputifotherversion {3.10pt}
 \select@language {italian}
-\beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
-\beamer@sectionintoc {2}{Tecniche basate sul contenuto}{19}{0}{2}

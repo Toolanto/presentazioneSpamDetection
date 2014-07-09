@@ -24,12 +24,29 @@ assistantsupervisor=true
 \begin{frame}
   \maketitle
 \end{frame}
-
-\section{Introduzione}
+\begin{frame}
+    \frametitle{Il fenomeno del web spam}
+    \begin{block}<1->{Le cause}
+    \begin{itemize}
+    \item<1->Col crescere delle dimensioni del web, aumenta la difficoltà di una pagina di comparire tra i primi risultati di un motore di ricerca per una data query.
+    \end{itemize}
+    \end{block}
+    \begin{block}<2->{Conseguenze}
+    \begin{itemize}
+        \item<1->Sviluppo di meccanismi di spam per tentare di ingannare gli algoritmi dei motori di ricerca al fine di ottenere un rank maggiore per una data pagina web. 
+        \item<2->Sviluppo di tecniche di spam detection.
+    \end{itemize}
+    \end{block}
+\end{frame}
+% \begin{frame}
+%     \frametitle{Tecniche spam}
+%     \begin{center}
+%      \includegraphics[width=12cm]{immagini/spam}
+%     \end{center}
+% \end{frame}
 \begin{frame}
   \frametitle{Obbiettivo della tesi}  
   Obbiettivo di questa tesi è stata l’analisi delle varie tecniche di spam detection descritte in letteratura al fine di valutarne il comportamento e vagliare la possibilità di utilizzo di tali tecniche online.
-
   \begin{block}<2->{Struttura della tesi}
   \begin{itemize}
   \item Classificazione delle varie tecniche di spam detection sulla base dei segnali utilizzati.
@@ -37,83 +54,18 @@ assistantsupervisor=true
   \end{itemize}
   \end{block}
 \end{frame}
+ \begin{frame}
+     \frametitle{Tecniche di spam detection}
+     \begin{block}<2->{Classificazione}
+     \begin{itemize}
+     \item<3->Tecniche basate sul contenuto;	
+     \item<4->Tecniche basate sul grafo del web;
+     \item<5->Tecniche basate su segnali eterogenei.
+     \end{itemize}
+     \end{block}
+ \end{frame}
 \begin{frame}
-  \frametitle{Motivazioni}  
-  \begin{itemize}
-\item I risultati di tale lavoro sarranno utilizzati per essere integrati all’interno di un web crawler distribuito ad alte prestazioni per il futuro sviluppo di un modulo di spam detection.
-\item L’esigenza di tale modulo è sorta a seguito dello sviluppo, presso il Dipartimento di Informatica, di un crawler chiamato BUbiNG, altamente configurabile ma
-privo al momento di qualunque forma di rilevazione di siti e contenuti malevoli.
-  \end{itemize}
-\end{frame}
-\begin{frame}
-    \frametitle{Il fenomeno del web spam}
-    \begin{block}<1->{Le cause}
-    \begin{itemize}
-    \item<1->Col crescere delle dimensioni del web, aumenta la difficoltà di una pagina di comparire tra i primi risultati di un motore di ricerca per una data quey.
-    \end{itemize}
-    \end{block}
-    \begin{block}<2->{Conseguenze}
-    \begin{itemize}
-        \item<1->Sviluppo di meccanismi di spam per tentare di ingannare gli algoritmi dei motori di ricerca al fine di ottenere un rank maggiore per una data pagina web. 
-    \end{itemize}
-    \end{block}
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche spam}
-    \begin{center}
-     \includegraphics[width=8cm]{immagini/spam}
-    \end{center}
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche di boost: term spamming}
-    Il term spamming sfrutta alcuni punti di una pagina web per manipolarne il ranking.
-    \begin{block}<2->{Tassonomia}
-    \begin{itemize}
-    \item<2->Body spam;
-    \item<2->Title spam;
-    \item<2->Meta tag spam;
-    \item<2->Anchor text spam;
-    \item<2->URL spam.
-    \end{itemize}
-    \end{block}
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche di boost: link spamming}
-    Il link spamming è un tipo di spam che fa uso della struttura dei link tra le pagine web per favorire il rank di una pagina target \(t\). 
-    \begin{block}<2->{Tassonomia}
-    \begin{itemize}
-    \item<2->Outgoing link spam;
-    \item<2->Incoming link spam (Honeypot, Blog, Forum, Wiki, Scambio di link, Domini scaduti, Spam farm).
-    \end{itemize}
-    \end{block}
-\end{frame}
-\begin{frame}
-    \frametitle{Click spamming}
-I motori di ricerca utilizzano dati sul flusso dei click per regolare le funzioni di ranking, quindi gli spammer generano clik fraudolenti per manipolare il comportamento di queste funzioni in modo tale da fare avere un rank migliore ai loro siti. 
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche di hiding}
-    \begin{block}{Tassonomia}
-    \begin{itemize}
-    \item Content hiding;
-    \item Cloaking;
-    \item Redirection.
-    \end{itemize}
-    \end{block}
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche di spam detection}
-    \begin{block}<2->{Classificazione}
-    \begin{itemize}
-    \item<3->Tecniche basate sul contenuto;	
-    \item<4->Tecniche basate sul grafo del web;
-    \item<5->Tecniche basate su segnali eterogenei.
-    \end{itemize}
-    \end{block}
-\end{frame}
-\section{Tecniche basate sul contenuto}
-\begin{frame}
-    \frametitle{Tecniche basate sul contenuto - 1}
+    \frametitle{Tecniche basate sul contenuto}
     Un metodo per identificare lo spam basandosi sul contenuto di una pagina web è  quello di analizzare alcune feature delle pagine spam e confrontarle con le medesime feature delle pagine non spam al fine di ottenere dei valori con cui stimare la natura della pagina web.
     \begin{block}<2->{Esempi di feature}
     \begin{itemize}
@@ -125,68 +77,68 @@ I motori di ricerca utilizzano dati sul flusso dei click per regolare le funzion
     \end{itemize}
     \end{block}
 \end{frame}
-\begin{frame}
-    \frametitle{Feature: Numero di parole nel body}
-  \begin{center}
-  \includegraphics[width=8cm]{immagini/contenuto/fetterly3}
-  \end{center}
-\end{frame}
-\begin{frame}
- \frametitle{Feature: Numero di parole nel titolo}
-  \begin{center}
-  \includegraphics[width=8cm]{immagini/contenuto/fetterly4}
-  \end{center}
-\end{frame}
-\begin{frame}
-    \frametitle{Tecniche basate sul contenuto - 2}
-    \begin{itemize}
-     \item Viene utilizzata la \textit{Kullback-Leibler Divergence} (KLD) per misurare la divergenze tra le distribuzioni di probabilità dei termini	di pagine web, applicandola a unità di testo della pagina di partenza e di quella linkata
-     \item La Kullback-Leibler (KL) è una misura  asimmetrica della divergenza che misura quanto male una distribuzione di probabilità \(M_q\) riesce a modellare \(M_d\)
-     \begin{equation}
-KLD(T_1||T_2) = \sum_{t \in T_1} P_{T_1}(t) \log \frac{P_{T_1}(t)}{P_{T_2}(t)}
-\label{eqn:kld}
-     \end{equation}
-\end{itemize}
-\end{frame}
-\begin{frame}
-  \frametitle{KLD: Tipo di sorgenti}
-  \begin{block}<2->{Pagina di Partenza}
-  \begin{itemize}
-      \item testo delle ancore  
-   \item testo intorno alle ancore
-   \item termini nell'URL
-  \end{itemize}
-  \end{block}
-  \begin{block}<3->{Pagina di Arrivo}
-  \begin{itemize}
-   \item titolo della pagina  
-   \item contenuto della pagina
-   \item meta tag
-  \end{itemize}
-  \end{block}
-\end{frame}
-\begin{frame}
-  \frametitle{KLD: Uso delle sorgenti}
-  \begin{block}{Combinazione}
-  \begin{itemize}
-      \item testo delle ancore - contenuto  
-      \item testo vicino alle ancore - contenuto
-      \item termini nell’URL - contenuto
-      \item testo delle ancore - titolo
-      \item testo intorno alle ancore - titolo
-      \item termini nell’URL - titolo
-      \item titolo - contenuto
-      \item metatag
-  \end{itemize}
-  \end{block}
-\end{frame}
+% \begin{frame}
+%     \frametitle{Feature: Numero di parole nel body}
+%   \begin{center}
+%   \includegraphics[width=8cm]{immagini/contenuto/fetterly3}
+%   \end{center}
+% \end{frame}
+% \begin{frame}
+%  \frametitle{Feature: Numero di parole nel titolo}
+%   \begin{center}
+%   \includegraphics[width=8cm]{immagini/contenuto/fetterly4}
+%   \end{center}
+% \end{frame}
+%\begin{frame}
+%    \frametitle{Tecniche basate sul contenuto - 2}
+%    \begin{itemize}
+%     \item Viene utilizzata la \textit{Kullback-Leibler Divergence} (KLD) per misurare la divergenze tra le distribuzioni di probabilità dei termini	di pagine web, applicandola a unità di testo della pagina di partenza e di quella linkata
+%     \item La Kullback-Leibler (KL) è una misura  asimmetrica della divergenza che misura quanto male una distribuzione di probabilità \(M_q\) riesce a modellare \(M_d\)
+%     \begin{equation}
+%KLD(T_1||T_2) = \sum_{t \in T_1} P_{T_1}(t) \log \frac{P_{T_1}(t)}{P_{T_2}(t)}
+%\label{eqn:kld}
+%     \end{equation}
+%\end{itemize}
+%\end{frame}
+%\begin{frame}
+%  \frametitle{KLD: Tipo di sorgenti}
+%  \begin{block}<2->{Pagina di Partenza}
+%  \begin{itemize}
+%      \item testo delle ancore  
+%   \item testo intorno alle ancore
+%   \item termini nell'URL
+%  \end{itemize}
+%  \end{block}
+%  \begin{block}<3->{Pagina di Arrivo}
+%  \begin{itemize}
+%   \item titolo della pagina  
+%   \item contenuto della pagina
+%   \item meta tag
+%  \end{itemize}
+%  \end{block}
+%\end{frame}
+%\begin{frame}
+%  \frametitle{KLD: Uso delle sorgenti}
+%  \begin{block}{Combinazione}
+%  \begin{itemize}
+%      \item testo delle ancore - contenuto  
+%      \item testo vicino alle ancore - contenuto
+%      \item termini nell’URL - contenuto
+%      \item testo delle ancore - titolo
+%      \item testo intorno alle ancore - titolo
+%      \item termini nell’URL - titolo
+%      \item titolo - contenuto
+%      \item metatag
+%  \end{itemize}
+%  \end{block}
+%\end{frame}
 \begin{frame}
   \frametitle{Tecniche basate sul grafo}
   \begin{block}{Tecniche base}
   \begin{itemize}
   \item TrustRank
   \item Anti-trust Rank
-  \item Spam mass
+% \item Spam mass
   \end{itemize}
   \end{block}
   \begin{block}<2->{}
@@ -210,44 +162,43 @@ KLD(T_1||T_2) = \sum_{t \in T_1} P_{T_1}(t) \log \frac{P_{T_1}(t)}{P_{T_2}(t)}
 \begin{frame}
   \frametitle{TrustRank}
   \begin{itemize}
-   \item   TrustRank quindi è una versione personalizzata di PageRank dove il vettore di preferenza \(v\) non rappresenta una distribuzione uniforme su tutte le pagine del grafo \(G\) ma una distribzione personalizzata dalle pagine del seedset di partenza.
+   \item   TrustRank quindi è una versione personalizzata di PageRank dove il vettore di preferenza \(v\) non rappresenta una distribuzione uniforme su tutte le pagine del grafo \(G\) ma una distribuzione personalizzata dalle pagine del seedset di partenza.
 $$
    \alpha G + (1-\alpha)1v^t
 $$
-\item I campi del vettore \(v\) avranno valore 1 se corrisponderanno al nodo del seedset altrimenti 0.
   \end{itemize}
 \end{frame}
 \begin{frame}
   \frametitle{Anti-trust Rank}
   \begin{itemize}
-   \item Partendo dalla stessa intuizione dell'isolamento approsimato 
-   \item Anti-trust Rank utilizza un seed set iniziale composto da pagine spam
+   \item Partendo dalla stessa intuizione dell'isolamento approssimato 
+   \item Anti-trust Rank utilizza un seedset set iniziale composto da pagine spam
    \item Quindi una pagina spam (conosciuta) è linkata da un'altra pagina spam in quanto una pagina non spam non ne avrebbe il motivo 
-   \item Come per TrustRank, Anti-trust Rank viene calolato usando Pagerank personalizzato sul grafo trasposto (visto che adesso si prendono in consierazioni i link in entrata)
+   \item Come per TrustRank, Anti-trust Rank viene calcolato usando Pagerank personalizzato sul grafo trasposto (visto che adesso si prendono in considerazioni i link in entrata)
    \item Anti-trust Rank assegna un rank maggiore alle pagine spam
   \end{itemize}
 \end{frame}
-\begin{frame}
-  \frametitle{Spam mass}
-  \begin{itemize}
-   \item Per riconoscere una spam farm si parte dal presupposto che i nodi della spam farm hanno dei link uscenti verso delle pagine target \(t\) per aumentarne il rank
-   \item Spam mass è una misura che valuta l'impatto dello spam sul rank di una pagina
-   \item Vengono assegnati due valori: PageRank e Spam mass
-  \end{itemize}
-\end{frame}
-\begin{frame}
-  \frametitle{Determinazione della spam farm}
-  Partendo da un insieme \(\tilde{(V)}^+\) composto da pagine non spam conosiute
-   \begin{block}<2->{Si calcolano due misure}
-   \begin{itemize}
-    \item Spam mass assoluta: \(\tilde{M}_x=p_x-p'_x\)
-     \item Spam mass relativa:  \(\tilde{m}_x=(p_x-p'_x)/p_x=1-p'_x/px\)
-   \end{itemize}
-   dove \(p\) è il \textit{pagerank} dei nodi basato su una distribuzione uniforme mentre \(p'\) è \textit{pagerank} basato sull'insieme \(\tilde{(V)}^+\).
-   
-   Viene usato un valore di soglia per determinare se una pagina è parte di una spam farm.
-   \end{block}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Spam mass}
+%  \begin{itemize}
+%   \item Per riconoscere una spam farm si parte dal presupposto che i nodi della spam farm hanno dei link uscenti verso delle pagine target \(t\) per aumentarne il rank
+%   \item Spam mass è una misura che valuta l'impatto dello spam sul rank di una pagina
+%   \item Vengono assegnati due valori: PageRank e Spam mass
+%  \end{itemize}
+%\end{frame}
+% \begin{frame}
+%   \frametitle{Determinazione della spam farm}
+%   Partendo da un insieme \(\tilde{(V)}^+\) composto da pagine non spam conosciute
+%    \begin{block}<2->{Si calcolano due misure}
+%    \begin{itemize}
+%     \item Spam mass assoluta: \(\tilde{M}_x=p_x-p'_x\)
+%      \item Spam mass relativa:  \(\tilde{m}_x=(p_x-p'_x)/p_x=1-p'_x/px\)
+%    \end{itemize}
+%    dove \(p\) è il \textit{pagerank} dei nodi basato su una distribuzione uniforme mentre \(p'\) è \textit{pagerank} basato sull'insieme \(\tilde{(V)}^+\).
+%    
+%    Viene usato un valore di soglia per determinare se una pagina è parte di una spam farm.
+%    \end{block}
+% \end{frame}
 \begin{frame}
   \frametitle{Tecniche eterogenee: Header HTTP}
 \begin{itemize}
@@ -262,13 +213,13 @@ $$
  \end{itemize}
 \end{block}
 \end{frame}
-\begin{frame}
-  \frametitle{Header HTTP - Esempio}
-  Analizzando i valori dei campi degli header HTTP si nota che alcuni di essi sono più frequenti nelle pagine spam invece delle pagine non spam
-\begin{center}
- \includegraphics[width=6cm]{immagini/altre/webb}
-\end{center}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Header HTTP - Esempio}
+%   Analizzando i valori dei campi degli header HTTP si nota che alcuni di essi sono più frequenti nelle pagine spam invece delle pagine non spam
+% \begin{center}
+%  \includegraphics[width=6cm]{immagini/altre/webb}
+% \end{center}
+% \end{frame}
 \begin{frame}
   \frametitle{Test}
   \begin{itemize}
@@ -277,7 +228,7 @@ $$
 il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
   \end{itemize}
   \begin{block}<2->{Nota}
-   La simulazione della fase di crawling  stata fatta tramite una visita in ampizza su grafo.
+   La simulazione della fase di crawling  stata fatta tramite una visita in ampiezza su grafo.
   \end{block}
 \end{frame}
 \begin{frame}
@@ -293,13 +244,13 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
  \includegraphics[height=6cm]{immagini/test1/coplotTrustAnti_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 1: Risultati}
-\begin{itemize}
- \item<1-> Il comportamento tra \(\tau_{t}\) e \(\tau_{a}\) indica che TrustRank online è meno efficace di Anti-trust Rank nell'approssimare il comportamento offline. 
- \item<2-> Perciò tra questi due algoritmi quello che si adatta meglio nell'utilizzo in modalità online è Anti-trust rank perché tende ad approssimare fin da subito il comportamento offline. 
-\end{itemize}
-\end{frame}
+%\begin{frame}
+%\frametitle{Test 1: Risultati}
+%\begin{itemize}
+% \item<1-> Il comportamento tra \(\tau_{t}\) e \(\tau_{a}\) indica che TrustRank online è meno efficace di Anti-trust Rank nell'approssimare il comportamento offline. 
+% \item<2-> Perciò tra questi due algoritmi quello che si adatta meglio nell'utilizzo in modalità online è Anti-trust rank perché tende ad approssimare fin da subito il comportamento offline. 
+%\end{itemize}
+%\end{frame}
 \begin{frame}
 \frametitle{Test 2}
   \begin{itemize}
@@ -314,18 +265,18 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 \end{center}
 \end{frame}
   \begin{frame}
-\frametitle{Test 2: Grafico Anti-trustRank}
+\frametitle{Test 2: Grafico Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test2/antiTrustraktGoodNodesTestMode1_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 2: Risultati}
-\begin{itemize}
- \item<1-> Dai test si deduce che  Anti-trust Rank è più efficace di Trustrank in assoluto (vedi test 1) 
- \item<2-> Trustrank è più efficace ad identificare i nodi spam
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 2: Risultati}
+% \begin{itemize}
+%  \item<1-> Dai test si deduce che  Anti-trust Rank è più efficace di Trustrank in assoluto (vedi test 1) 
+%  \item<2-> Trustrank è più efficace ad identificare i nodi spam
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
  \frametitle{Test 3}
  Si è  simulato il caso in cui il seedset  utilizzato dagli algoritmi sia formato da nodi al limite del grafo \(G\).
@@ -335,36 +286,34 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 \end{center}
  \end{itemize}
 \end{frame}
-\begin{frame}
-\frametitle{Test 3: Risultati}
-\begin{itemize}
- \item<1-> Anti-trust Rank è meno dipendente dal vettore di preferenza che gli viene passato rispetto a Trustrank, almeno fino a quando il grafo temporaneo è al massimo l'80\% del grafo completo
- \item<2-> Quindi anche se si usasse Anti-trust Rank in modalità online con un seedset poco pertinente questo riuscirebbe a produrre, fin dall'inizio del crawling, dei risultati molto vicini a quelli calcolati Anti-trust Rank sull'intero grafo con un altro seedset
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 3: Risultati}
+% \begin{itemize}
+%  \item<1-> Anti-trust Rank è meno dipendente dal vettore di preferenza che gli viene passato rispetto a Trustrank, almeno fino a quando il grafo temporaneo è al massimo l'80\% del grafo completo
+%  \item<2-> Quindi anche se si usasse Anti-trust Rank in modalità online con un seedset poco pertinente questo riuscirebbe a produrre, fin dall'inizio del crawling, dei risultati molto vicini a quelli calcolati Anti-trust Rank sull'intero grafo con un altro seedset
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Test 4}
-Simile al test 3 ma il fattore di attenuazione \(\alpha\) con cusi si calola il vettore di TrustRank sull'intero grafo e sul grafo temporaneo è impostato a 0.005.
-\begin{itemize}
-  \item<2-> \begin{center}
- \includegraphics[height=5cm]{immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005}
+Simile al test 3 ma il fattore di attenuazione \(\alpha\) con cui si calcola il vettore di TrustRank sull'intero grafo e sul grafo temporaneo è impostato a 0.005.
+   \begin{center}
+ \includegraphics[height=6cm]{immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005}
 \end{center}
- \end{itemize}
 \end{frame}
-\begin{frame}
-\frametitle{Test 4: Risultati}
-\begin{itemize}
- \item<1-> TrustRank è meno dipendente dal fattore \(\alpha\) rispetto ad Anti-trust Rank
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 4: Risultati}
+% \begin{itemize}
+%  \item<1-> TrustRank è meno dipendente dal fattore \(\alpha\) rispetto ad Anti-trust Rank
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Test 5}
 \begin{itemize}
- \item Dal vettore di TrustRank,  calcolato sul grafo temporaneo, viene calolata la differenza \(\Delta_t\) tra la media \(Mb_t\) dei valori di TrustRank dei nodi non spam e la media \(Ms_t\) dei valori di TrustRank dei nodi spam.
+ \item Dal vettore di TrustRank,  calcolato sul grafo temporaneo, viene calcolata la differenza \(\Delta_t\) tra la media \(Mb_t\) dei valori di TrustRank dei nodi non spam e la media \(Ms_t\) dei valori di TrustRank dei nodi spam.
  \begin{equation}
  \Delta_t = Mb_t-Ms_t
 \end{equation}
-  \item Dal vettore di Anti-trust Rank,  calcolato sul grafo temporaneo, viene calolata la differenza \(\Delta_a\) tra la media \(Ma_t\) dei valori di Anti-trust Rank dei nodi non spam e la media \(Ms_t\) dei valori di Anti-trust Rank dei nodi spam.
+  \item Dal vettore di Anti-trust Rank,  calcolato sul grafo temporaneo, viene calcolata la differenza \(\Delta_a\) tra la media \(Ma_t\) dei valori di Anti-trust Rank dei nodi non spam e la media \(Ms_t\) dei valori di Anti-trust Rank dei nodi spam.
   \begin{equation}
  \Delta_a=Mb_a-Ms_a
 \end{equation}
@@ -376,28 +325,28 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\) con cusi si calola il 
  \includegraphics[height=6cm]{immagini/test5/averageTest_trust_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 5: Risultati}
-\begin{itemize}
-\item<1-> Il risultato atteso è che durante la visita il calcolo di TrustRank discrimini in modo efficace i nodi non spam dai nodi spam e quindi che \(\Delta_t\) cresca durante la visita.
- \item<2-> Ma i risultati del grafico indicano che all'inizio della visita la differenza \(\Delta_t\) ha un valore più alto rispetto alla differenza \(\Delta_t\) calcolata sul grafo temporaneo che si ottiene ai passi successivi della visita in ampiezza.
- \item<3->Tale comportamento implica che la distanza tra i valori di TrustRank tra i nodi non spam e spam tende ad essere meno marcata tanto più il grafo temporane \(G_v\) su cui viene calcolato TrustRank cresce. 
- \item<4-> Perciò invece di avere un andamento logaritmo i grafici sono contraddistinti da una parabola decrescente.
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 5: Risultati}
+% \begin{itemize}
+% \item<1-> Il risultato atteso è che durante la visita il calcolo di TrustRank discrimini in modo efficace i nodi non spam dai nodi spam e quindi che \(\Delta_t\) cresca durante la visita.
+%  \item<2-> Ma i risultati del grafico indicano che all'inizio della visita la differenza \(\Delta_t\) ha un valore più alto rispetto alla differenza \(\Delta_t\) calcolata sul grafo temporaneo che si ottiene ai passi successivi della visita in ampiezza.
+%  \item<3->Tale comportamento implica che la distanza tra i valori di TrustRank tra i nodi non spam e spam tende ad essere meno marcata tanto più il grafo temporane \(G_v\) su cui viene calcolato TrustRank cresce. 
+%  \item<4-> Perciò invece di avere un andamento logaritmo i grafici sono contraddistinti da una parabola decrescente.
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Test 5: Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test5/averageTest_antitrust_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 5: Risultati}
-\begin{itemize}
- \item<1-> Anti-trust Rank calcolato verso la fine della visita dovrebbe restituire dei valori per i nodi non spam molto piccoli  e per i nodi spam dei valori molto alti. Si deduce quindi che alla fine della visita ,  \(Mb_a\) dovrebbe essere più piccola di \(Ms_a\) e di conseguenza che \(\Delta_a\) dovrebbe essere negativa . 
- \item<2-> Anche in questo caso i risultati illustrati nei due grafici smentiscono il comportamento atteso in quanto il valore di \(\Delta_a\) aumenta con l'aumentare dei nodi del grafo temporaneo su cui viene calcolato Anti-trust Rank.
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 5: Risultati}
+% \begin{itemize}
+%  \item<1-> Anti-trust Rank calcolato verso la fine della visita dovrebbe restituire dei valori per i nodi non spam molto piccoli  e per i nodi spam dei valori molto alti. Si deduce quindi che alla fine della visita ,  \(Mb_a\) dovrebbe essere più piccola di \(Ms_a\) e di conseguenza che \(\Delta_a\) dovrebbe essere negativa . 
+%  \item<2-> Anche in questo caso i risultati illustrati nei due grafici smentiscono il comportamento atteso in quanto il valore di \(\Delta_a\) aumenta con l'aumentare dei nodi del grafo temporaneo su cui viene calcolato Anti-trust Rank.
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Test 6}
 \begin{itemize}
@@ -411,27 +360,27 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\) con cusi si calola il 
  \includegraphics[height=6cm]{immagini/test6/averageCompleteTest_trust_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 6: Risultati}
-\begin{itemize}
- \item L'andamento del grafico giustifica i risultati ottenuti nel test numero 5  il quale ha un andamento molto simile.
- \item Il range in cui variano i valori \(\Delta_t\), in questo test il range è di un ordine di grandezza più piccolo e quindi si deduce che la media dei valori di TrustRank del gruppo di nodi spam e la media TrustRank del gruppo di nodi non spam, contrariamente a quanto ci si aspetta, sono molto vicine. 
- \item Perciò il test confermache i risultati ottenuti nel test 5 dipendono dall'algoritmo di TrustRank.
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 6: Risultati}
+% \begin{itemize}
+%  \item L'andamento del grafico giustifica i risultati ottenuti nel test numero 5  il quale ha un andamento molto simile.
+%  \item Il range in cui variano i valori \(\Delta_t\), in questo test il range è di un ordine di grandezza più piccolo e quindi si deduce che la media dei valori di TrustRank del gruppo di nodi spam e la media TrustRank del gruppo di nodi non spam, contrariamente a quanto ci si aspetta, sono molto vicine. 
+%  \item Perciò il test conferma che i risultati ottenuti nel test 5 dipendono dall'algoritmo di TrustRank.
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Test 6: Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test6/averageCompleteTest_antitrust_62}
 \end{center}
 \end{frame}
-\begin{frame}
-\frametitle{Test 6: Risultati}
-\begin{itemize}
- \item I risultati del grafico non seguano quelli del test 5
- \item Ma dal momento che i  valori del grafico variano in un range molto piccolo possono confermare i risultati ottenuti nel test numero 5
- \end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Test 6: Risultati}
+% \begin{itemize}
+%  \item I risultati del grafico non seguano quelli del test 5
+%  \item Ma dal momento che i  valori del grafico variano in un range molto piccolo possono confermare i risultati ottenuti nel test numero 5
+%  \end{itemize}
+% \end{frame}
 \begin{frame}
  \frametitle{Conclusioni}
  \begin{itemize}

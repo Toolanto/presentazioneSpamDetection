@@ -28,7 +28,7 @@ assistantsupervisor=true
     \frametitle{Il fenomeno del web spam}
     \begin{block}<1->{Le cause}
     \begin{itemize}
-    \item<1->Col crescere delle dimensioni del web, aumenta la difficoltà di una pagina di comparire tra i primi risultati di un motore di ricerca per una data query.
+    \item<1->Col crescere delle dimensioni del web, aumenta la difficoltà per i webmaster di far comparire una pagina tra i primi risultati di un motore di ricerca per una data query.
     \end{itemize}
     \end{block}
     \begin{block}<2->{Conseguenze}
@@ -38,19 +38,13 @@ assistantsupervisor=true
     \end{itemize}
     \end{block}
 \end{frame}
- \begin{frame}
-     \frametitle{Tecniche spam}
-     \begin{center}
-      \includegraphics[width=12cm]{immagini/spam}
-     \end{center}
- \end{frame}
 \begin{frame}
   \frametitle{Obbiettivo della tesi}  
   Obbiettivo di questa tesi è stata l’analisi delle varie tecniche di spam detection descritte in letteratura al fine di valutarne il comportamento e vagliare la possibilità di utilizzo di tali tecniche online.
   \begin{block}<2->{Struttura della tesi}
   \begin{itemize}
   \item Classificazione delle varie tecniche di spam detection sulla base dei segnali utilizzati.
-  \item Analisi degli algoritmi offline durante la fase di crawling.
+  \item Analisi online (durante la fase di crawling) degli algoritmi offline.
   \end{itemize}
   \end{block}
 \end{frame}
@@ -72,7 +66,7 @@ assistantsupervisor=true
     \item Numero di parole all'interno della pagina (Keyword Stuffing);
     \item Numero di parole all'interno dei titoli delle pagine;
     \item Lunghezza media delle parole all'interno delle pagine;
-    \item Lunghezza testo all'interno del tag \(<a>\);
+    \item Lunghezza del testo all'interno dell'elemento \(<a>\);
     \item Frazione di contenuto visibile;
     \end{itemize}
     \end{block}
@@ -164,7 +158,7 @@ assistantsupervisor=true
   \begin{itemize}
    \item   TrustRank quindi è una versione personalizzata di PageRank dove il vettore di preferenza \(v\) non rappresenta una distribuzione uniforme su tutte le pagine del grafo \(G\) ma una distribuzione personalizzata dalle pagine del seedset di partenza.
 $$
-   \alpha G + (1-\alpha)1v^t
+   \alpha G + (1-\alpha)\textbf{1}v^t
 $$
   \end{itemize}
 \end{frame}
@@ -221,9 +215,9 @@ $$
 % \end{center}
 % \end{frame}
 \begin{frame}
-  \frametitle{Test}
+  \frametitle{Esperimenti}
   \begin{itemize}
-   \item Si è scelto, di valutare l’efficacia di due algoritmi link based offline (TrustRank e Anti-trust Rank ) durante l’operazione di crawling ovvero in modo online
+   \item Si è scelto, di valutare l’efficacia di due algoritmi link based offline (TrustRank e Anti-trust Rank) durante l’operazione di crawling ovvero in modo online
    \item Il razionale di tale analisi è stato la valutazione dell’operabilità di tali algoritmi durante l’esecuzione online e
 il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
   \end{itemize}
@@ -232,14 +226,14 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
   \end{block}
 \end{frame}
 \begin{frame}
-\frametitle{Test 1}
+\frametitle{Esperimento 1 {\tiny(Confronto online/offline)}}
 \begin{itemize}
  \item<1-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_t\), tra il vettore \(t\) di TrustRank ricavato sull’intero grafo \(G\) e il vettore \(t_i\) di TrustRank calcolato sul grafo temporaneo \(G_v\) ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
  \item<2-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_a\), tra il vettore \(a\) di Anti-trust Rank ricavato sull’intero grafo \(G\) e il vettore \(a_i\) di Anti-trust Rank calcolato sul grafo temporaneo \(G_v\) ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
 \end{itemize}
 \end{frame}
 \begin{frame}
-\frametitle{Test 1: Grafici}
+\frametitle{Esperimento 1 {\tiny(Confronto online/offline)} - Grafici}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test1/coplotTrustAnti_62}
 \end{center}
@@ -252,20 +246,20 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 %\end{itemize}
 %\end{frame}
 \begin{frame}
-\frametitle{Test 2}
+\frametitle{Esperimento 2 (Confronto online/offline parziale)}
   \begin{itemize}
    \item<1-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_t\), tra il vettore \(t\) di TrustRank ricavato sull’intero grafo \(G\) e il vettore \(t_i\) di TrustRank calcolato sul grafo temporaneo \(G_v\), prendendo in considerazione i soli nodi spam.
    \item<2-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_a\), tra il vettore \(a\) di Anti-trust Rank ricavato sull’intero grafo \(G\) e il vettore \(a_i\) di Anti-trust Rank calcolato sul grafo temporaneo \(G_v\), prendendo in considerazione i soli nodi non spam.
   \end{itemize}
   \end{frame}
   \begin{frame}
-\frametitle{Test 2: Grafico TrustRank}
+\frametitle{Esperimento 2 (Confronto online/offline parziale): Grafico TrustRank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test2/trustrankBadNodesTestMode1_62}
 \end{center}
 \end{frame}
   \begin{frame}
-\frametitle{Test 2: Grafico Anti-trust Rank}
+\frametitle{Esperimento 2 (Confronto online/offline parziale): Grafico Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test2/antiTrustraktGoodNodesTestMode1_62}
 \end{center}
@@ -278,13 +272,11 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
- \frametitle{Test 3}
- Si è  simulato il caso in cui il seedset  utilizzato dagli algoritmi sia formato da nodi al limite del grafo \(G\).
- \begin{itemize}
-  \item<2-> \begin{center}
+ \frametitle{Esperimento 3 (Avversariale)}
+ Si è  simulato una situazione avversiariale dove il seedset  utilizzato dagli algoritmi sia formato da nodi al limite del grafo \(G\).
+\begin{center}
  \includegraphics[height=6cm]{immagini/test3/coplotTrustAnti_Mode1_set3776_62}
 \end{center}
- \end{itemize}
 \end{frame}
 % \begin{frame}
 % \frametitle{Test 3: Risultati}
@@ -294,7 +286,7 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
-\frametitle{Test 4}
+\frametitle{Esperimento 4 (Avversariale con \(\alpha\)=0.005)}
 Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
    \begin{center}
  \includegraphics[height=6cm]{immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005}
@@ -307,7 +299,7 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
-\frametitle{Test 5}
+\frametitle{Esperimento 5 (Separazione delle classi online)}
 \begin{itemize}
  \item Dal vettore di TrustRank,  calcolato sul grafo temporaneo, viene calcolata la differenza \(\Delta_t\) tra la media \(Mb_t\) dei valori di TrustRank dei nodi non spam e la media \(Ms_t\) dei valori di TrustRank dei nodi spam.
  \begin{equation}
@@ -320,7 +312,7 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 \end{itemize}
 \end{frame}
 \begin{frame}
-\frametitle{Test 5: TrustRank}
+\frametitle{Esperimento 5 (Separazione delle classi online): TrustRank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test5/averageTest_trust_62}
 \end{center}
@@ -335,7 +327,7 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
-\frametitle{Test 5: Anti-trust Rank}
+\frametitle{Esperimento 5 (Separazione delle classi online): Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test5/averageTest_antitrust_62}
 \end{center}
@@ -348,14 +340,14 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
-\frametitle{Test 6}
+\frametitle{Esperimento 6 (Separazione delle classi offline)}
 \begin{itemize}
  \item Dal momento che il test numero 5 ha prodotto dei risultati che indicano un comportamento diverso da quello atteso, è stato implementato questo test per verificare la correttezza dei risultati ottenuti.
  \item Il test è simile al test 5 ma invece di usare i valori temporanei di TrustRank e Anti-trust Rank per calolare \(\Delta_t\) e \(\Delta_a\), durante la visita in ampiezza, si utilizzano i valori ricavati da TrustRank e Anti-trust Rank calcolati sul grafo completo.
  \end{itemize}
 \end{frame}
 \begin{frame}
-\frametitle{Test 6: TrustRank}
+\frametitle{Esperimento 6 (Separazione delle classi offline): TrustRank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test6/averageCompleteTest_trust_62}
 \end{center}
@@ -369,7 +361,7 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 %  \end{itemize}
 % \end{frame}
 \begin{frame}
-\frametitle{Test 6: Anti-trust Rank}
+\frametitle{Esperimento 6 (Separazione delle classi offline): Anti-trust Rank}
 \begin{center}
  \includegraphics[height=6cm]{immagini/test6/averageCompleteTest_antitrust_62}
 \end{center}

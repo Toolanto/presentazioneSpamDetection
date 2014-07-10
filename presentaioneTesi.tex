@@ -38,12 +38,12 @@ assistantsupervisor=true
     \end{itemize}
     \end{block}
 \end{frame}
-% \begin{frame}
-%     \frametitle{Tecniche spam}
-%     \begin{center}
-%      \includegraphics[width=12cm]{immagini/spam}
-%     \end{center}
-% \end{frame}
+ \begin{frame}
+     \frametitle{Tecniche spam}
+     \begin{center}
+      \includegraphics[width=12cm]{immagini/spam}
+     \end{center}
+ \end{frame}
 \begin{frame}
   \frametitle{Obbiettivo della tesi}  
   Obbiettivo di questa tesi è stata l’analisi delle varie tecniche di spam detection descritte in letteratura al fine di valutarne il comportamento e vagliare la possibilità di utilizzo di tali tecniche online.
@@ -144,7 +144,7 @@ assistantsupervisor=true
   \begin{block}<2->{}
   Utilizzano una versione personalizzata di PageRank:
   \begin{equation}
-   \alpha G + (1-\alpha)1v^t
+   \alpha G + (1-\alpha)\textbf{1}v^t
    \label{eqn:pagerank}
   \end{equation}
   \end{block}
@@ -164,7 +164,7 @@ assistantsupervisor=true
   \begin{itemize}
    \item   TrustRank quindi è una versione personalizzata di PageRank dove il vettore di preferenza \(v\) non rappresenta una distribuzione uniforme su tutte le pagine del grafo \(G\) ma una distribuzione personalizzata dalle pagine del seedset di partenza.
 $$
-   \alpha G + (1-\alpha)1v^t
+   \alpha G + (1-\alpha)\textbf{1}v^t
 $$
   \end{itemize}
 \end{frame}

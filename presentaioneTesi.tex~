@@ -38,12 +38,12 @@ assistantsupervisor=true
     \end{itemize}
     \end{block}
 \end{frame}
-% \begin{frame}
-%     \frametitle{Tecniche spam}
-%     \begin{center}
-%      \includegraphics[width=12cm]{immagini/spam}
-%     \end{center}
-% \end{frame}
+ \begin{frame}
+     \frametitle{Tecniche spam}
+     \begin{center}
+      \includegraphics[width=12cm]{immagini/spam}
+     \end{center}
+ \end{frame}
 \begin{frame}
   \frametitle{Obbiettivo della tesi}  
   Obbiettivo di questa tesi è stata l’analisi delle varie tecniche di spam detection descritte in letteratura al fine di valutarne il comportamento e vagliare la possibilità di utilizzo di tali tecniche online.
@@ -144,7 +144,7 @@ assistantsupervisor=true
   \begin{block}<2->{}
   Utilizzano una versione personalizzata di PageRank:
   \begin{equation}
-   \alpha G + (1-\alpha)1v^t
+   \alpha G + (1-\alpha)\textbf{1}v^t
    \label{eqn:pagerank}
   \end{equation}
   \end{block}
@@ -295,7 +295,7 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 % \end{frame}
 \begin{frame}
 \frametitle{Test 4}
-Simile al test 3 ma il fattore di attenuazione \(\alpha\) con cui si calcola il vettore di TrustRank sull'intero grafo e sul grafo temporaneo è impostato a 0.005.
+Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
    \begin{center}
  \includegraphics[height=6cm]{immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005}
 \end{center}

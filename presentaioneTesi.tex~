@@ -222,7 +222,7 @@ $$
 il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
   \end{itemize}
   \begin{block}<2->{Nota}
-   La simulazione della fase di crawling  stata fatta tramite una visita in ampiezza su grafo.
+   La simulazione della fase di crawling è stata fatta tramite una visita in ampiezza su grafo.
   \end{block}
 \end{frame}
 \begin{frame}
@@ -287,7 +287,7 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 % \end{frame}
 \begin{frame}
 \frametitle{Esperimento 4 {\tiny(Avversariale con \(\alpha\)=0.005)}}
-Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
+Simile all'esperimento 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
    \begin{center}
  \includegraphics[height=6cm]{immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0005}
 \end{center}
@@ -342,8 +342,8 @@ Simile al test 3 ma il fattore di attenuazione \(\alpha\)  è impostato a 0.005.
 \begin{frame}
 \frametitle{Esperimento 6 {\tiny(Separazione delle classi offline)}}
 \begin{itemize}
- \item Dal momento che il test numero 5 ha prodotto dei risultati che indicano un comportamento diverso da quello atteso, è stato implementato questo test per verificare la correttezza dei risultati ottenuti.
- \item Il test è simile al test 5 ma invece di usare i valori temporanei di TrustRank e Anti-trust Rank per calolare \(\Delta_t\) e \(\Delta_a\), durante la visita in ampiezza, si utilizzano i valori ricavati da TrustRank e Anti-trust Rank calcolati sul grafo completo.
+ \item Dal momento che l'esperimento numero 5 ha prodotto dei risultati che indicano un comportamento diverso da quello atteso, è stato implementato questo test per verificare la correttezza dei risultati ottenuti.
+ \item Il test è simile al esperimento 5 ma invece di usare i valori temporanei di TrustRank e Anti-trust Rank per calolare \(\Delta_t\) e \(\Delta_a\), durante la visita in ampiezza, si utilizzano i valori ricavati da TrustRank e Anti-trust Rank calcolati sul grafo completo.
  \end{itemize}
 \end{frame}
 \begin{frame}

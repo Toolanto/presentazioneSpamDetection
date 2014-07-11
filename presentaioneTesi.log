@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  10 JUL 2014 09:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.3.6)  11 JUL 2014 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1389,7 +1389,7 @@ Package pdftex.def Info: immagini/test4/coplotTrustAnti_Mode1_set3776_62_alpha0
 005.jpg used on input line 294.
 (pdftex.def)             Requested size: 170.71304pt x 170.71652pt.
 
-Overfull \vbox (28.60027pt too high) detected at line 294
+Overfull \vbox (40.0711pt too high) detected at line 294
  []
 
 
@@ -1583,7 +1583,7 @@ pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb>
-Output written on presentaioneTesi.pdf (38 pages, 339030 bytes).
+Output written on presentaioneTesi.pdf (38 pages, 339028 bytes).
 PDF statistics:
  414 PDF objects out of 1000 (max. 8388607)
  338 compressed objects within 4 object streams

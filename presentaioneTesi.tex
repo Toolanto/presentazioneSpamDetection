@@ -145,11 +145,11 @@ assistantsupervisor=true
   \end{frame}
 \begin{frame}
   \frametitle{TrustRank}
-  TrustRank tenta di assegnare un valore di rank maggiore alle pagine non spam rispetto alle pagine spam partendo da un insieme di pagine non spam.
+  TrustRank tenta di assegnare un valore di rank maggiore alle pagine non spam rispetto alle pagine spam.
   \begin{block}<2->{Assunzione}
   \begin{itemize}
-   \item Per determinare le pagine non spam, viene fatta un’assunzione empirica chiamata isolazione approssimata dell’insieme delle pagine buone, la quale afferma che le pagine non spam raramente punteranno a delle pagine spam.
-   \item Gli sviluppatori di pagine web non spam non hanno interesse nel linkare pagine spam (a meno che tramite l’uso di tecniche come l’honeypot vengano “ingannati”).
+   \item Per determinare le pagine non spam viene fatta un’assunzione empirica chiamata isolazione approssimata dell’insieme delle pagine buone, la quale afferma che le pagine non spam raramente punteranno a delle pagine spam.
+   \item Gli sviluppatori di pagine web non spam non hanno interesse nel linkare pagine spam (a meno che vengano “ingannati” tramite l’uso di tecniche come honeypot).
   \end{itemize}
   \end{block}
 \end{frame}
@@ -165,11 +165,11 @@ $$
 \begin{frame}
   \frametitle{Anti-trust Rank}
   \begin{itemize}
-   \item Partendo dalla stessa intuizione dell'isolamento approssimato 
-   \item Anti-trust Rank utilizza un seedset set iniziale composto da pagine spam
-   \item Quindi una pagina spam (conosciuta) è linkata da un'altra pagina spam in quanto una pagina non spam non ne avrebbe il motivo 
-   \item Come per TrustRank, Anti-trust Rank viene calcolato usando Pagerank personalizzato sul grafo trasposto (visto che adesso si prendono in considerazioni i link in entrata)
-   \item Anti-trust Rank assegna un rank maggiore alle pagine spam
+   \item Parte dalla stessa intuizione dell'isolamento approssimato
+   \item Utilizza un seedset iniziale composto da pagine spam
+   \item Assume che una pagina spam (conosciuta) sia linkata solo da un'altra pagina spam 
+   \item Come per TrustRank, utilizza Pagerank personalizzato sul grafo trasposto (prendendo in considerazioni i link in entrata)
+   \item Assegna un rank maggiore alle pagine spam
   \end{itemize}
 \end{frame}
 %\begin{frame}
@@ -217,9 +217,9 @@ $$
 \begin{frame}
   \frametitle{Esperimenti}
   \begin{itemize}
-   \item Si è scelto, di valutare l’efficacia di due algoritmi link based offline (TrustRank e Anti-trust Rank) durante l’operazione di crawling ovvero in modo online
-   \item Il razionale di tale analisi è stato la valutazione dell’operabilità di tali algoritmi durante l’esecuzione online e
-il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
+   \item Si è scelto di valutare l’efficacia di due algoritmi link based offline (TrustRank e Anti-trust Rank) durante l’operazione di crawling ovvero in modo online.
+   \item Razionale di tale analisi è stato la valutazione dell’operabilità di tali algoritmi durante l’esecuzione online e
+il confronto delle prestazioni rispetto all’utilizzo convenzionale offline.
   \end{itemize}
   \begin{block}<2->{Nota}
    La simulazione della fase di crawling è stata fatta tramite una visita in ampiezza su grafo.
@@ -228,8 +228,8 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 \begin{frame}
 \frametitle{Esperimento 1 {\tiny(Confronto online/offline)}}
 \begin{itemize}
- \item<1-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_t\), tra il vettore \(t\) di TrustRank ricavato sull’intero grafo \(G\) e il vettore \(t_i\) di TrustRank calcolato sul grafo temporaneo \(G_v\) ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
- \item<2-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_a\), tra il vettore \(a\) di Anti-trust Rank ricavato sull’intero grafo \(G\) e il vettore \(a_i\) di Anti-trust Rank calcolato sul grafo temporaneo \(G_v\) ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
+ \item<1-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_t\), tra il vettore \(t\) di TrustRank ricavato sull’intero grafo \(G\) e il vettore \(t_i\) di TrustRank calcolato sul grafo temporaneo \(G_v\), ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
+ \item<2-> Calcolo della distanza, attraverso l’utilizzo della Tau di Kendall \(\tau_a\), tra il vettore \(a\) di Anti-trust Rank ricavato sull’intero grafo \(G\) e il vettore \(a_i\) di Anti-trust Rank calcolato sul grafo temporaneo \(G_v\), ricavato ad ogni intervallo di nodi visitati lungo una visita in ampiezza \(v\) con nodo sorgente \(s\).
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -273,7 +273,7 @@ il confronto delle prestazioni rispetto all’utilizzo convenzionale offline
 % \end{frame}
 \begin{frame}
  \frametitle{Esperimento 3 {\tiny(Avversariale)}}
- Si è  simulato una situazione avversariale dove il seedset  utilizzato dagli algoritmi sia formato da nodi al limite del grafo \(G\).
+ Si è  simulata una situazione avversariale dove il seedset  utilizzato dagli algoritmi sia formato da nodi al limite del grafo \(G\).
 \begin{center}
  \includegraphics[height=6cm]{immagini/test3/coplotTrustAnti_Mode1_set3776_62}
 \end{center}
@@ -305,7 +305,7 @@ Simile all'esperimento 3 ma il fattore di attenuazione \(\alpha\)  è impostato 
  \begin{equation}
  \Delta_t = Mb_t-Ms_t
 \end{equation}
-  \item Dal vettore di Anti-trust Rank,  calcolato sul grafo temporaneo, viene calcolata la differenza \(\Delta_a\) tra la media \(Ma_t\) dei valori di Anti-trust Rank dei nodi non spam e la media \(Ms_t\) dei valori di Anti-trust Rank dei nodi spam.
+  \item Dal vettore di Anti-trust Rank,  calcolato sul grafo temporaneo, viene calcolata la differenza \(\Delta_a\) tra la media \(Mb_a\) dei valori di Anti-trust Rank dei nodi non spam e la media \(Ms_a\) dei valori di Anti-trust Rank dei nodi spam.
   \begin{equation}
  \Delta_a=Mb_a-Ms_a
 \end{equation}
@@ -342,8 +342,7 @@ Simile all'esperimento 3 ma il fattore di attenuazione \(\alpha\)  è impostato 
 \begin{frame}
 \frametitle{Esperimento 6 {\tiny(Separazione delle classi offline)}}
 \begin{itemize}
- \item Dal momento che l'esperimento numero 5 ha prodotto dei risultati che indicano un comportamento diverso da quello atteso, è stato implementato questo test per verificare la correttezza dei risultati ottenuti.
- \item Il test è simile al esperimento 5 ma invece di usare i valori temporanei di TrustRank e Anti-trust Rank per calcolare \(\Delta_t\) e \(\Delta_a\), durante la visita in ampiezza, si utilizzano i valori ricavati da TrustRank e Anti-trust Rank calcolati sul grafo completo.
+ \item Il test è simile al esperimento 5 ma si utilizzano i valori ricavati da TrustRank e Anti-trust Rank calcolati sul grafo completo, invece di usare i valori temporanei di TrustRank e Anti-trust Rank per calcolare \(\Delta_t\) e \(\Delta_a\) durante la visita in ampiezza.
  \end{itemize}
 \end{frame}
 \begin{frame}
@@ -376,9 +375,8 @@ Simile all'esperimento 3 ma il fattore di attenuazione \(\alpha\)  è impostato 
 \begin{frame}
  \frametitle{Conclusioni}
  \begin{itemize}
-  \item TrustRank e Anti-trust Rank possono essere usati in modo online in quanto approssimano abbastanza bene il loro comportamento offline
-  \item Confrontando i due algoritmi si è evinto che Anti-trust Rank approssima, per quasi tutta la durata del crawling, meglio il comportamento offline e quindi è più indicato per essere usato durante la fase di crawling.
-  \item Una volta identificate le pagine spam molte altre pagine potrebbero essere non scaricate.
+  \item TrustRank e Anti-trust Rank possono essere usati in modo online in quanto approssimano abbastanza bene il loro comportamento offline.
+  \item Confrontando i due algoritmi si è evinto che Anti-trust Rank approssima meglio il comportamento offline, per quasi tutta la durata del crawling, e quindi è più indicato per essere usato in modo online.
    \end{itemize}
   \begin{block}{Sviluppi futuri}
     Sviluppo futuro di tale lavoro sarà la progettazione di un modulo di spam detection da inserire all’interno del web crawler BUbiNG.
